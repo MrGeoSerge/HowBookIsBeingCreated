@@ -1,0 +1,181 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+
+.wrapper{
+	width: 995px;
+	height: 1500px;
+
+	position: relative;
+	margin: auto;
+}
+
+@font-face {
+  font-family: 'JakobC-Bold';
+  src: url('../fonts/JakobC-Bold.eot');
+  src: url('../fonts/JakobC-Bold.woff2') format('woff2'),
+       url('../fonts/JakobC-Bold.woff') format('woff'),
+       url('../fonts/JakobC-Bold.ttf') format('truetype'),
+       url('../fonts/JakobC-Bold.svg#JakobC-Bold') format('svg'),
+       url('../fonts/JakobC-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PragmaticaC-Bold';
+  src: url('../fonts/PragmaticaC-Bold.eot');
+  src: url('../fonts/PragmaticaC-Bold.woff2') format('woff2'),
+       url('../fonts/PragmaticaC-Bold.woff') format('woff'),
+       url('../fonts/PragmaticaC-Bold.ttf') format('truetype'),
+       url('../fonts/PragmaticaC-Bold.svg#PragmaticaC-Bold') format('svg'),
+       url('../fonts/PragmaticaC-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.my-title{
+	font-family: 'JakobC-Bold';
+	font-size: 50px;
+	text-align: center;
+	color: green;
+	letter-spacing: 5px;
+}
+
+.logo{
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	height: 57px;
+	width: 150px;
+	background-image: url('../images/Osnova_logo_ukr_s1.png');
+}
+
+.logo a{
+	display: block;
+    width: 150px;
+    height: 57px;
+}
+
+.title-sub{
+	font-family: 'PragmaticaC-Bold';
+	font-size: 20px;
+	text-align: center;
+	color: #1db1e0;
+	letter-spacing: 0px;
+}
+
+.task{
+	padding: 5px;
+	padding-top: 10px;
+	color: darkred;
+}
+
+
+.game-field{
+	width: 993px;
+	/*border-right: 5px solid #bbb;*/
+	height: 2000px;
+	position: relative;
+}
+
+.wrapper-left{
+	width: 720px;
+	border-right: 5px solid #bbb;
+	height: 1642px;
+	float:left;
+	
+}
+
+.stages{
+	position: relative;
+	width: 215px;
+	height: 215px;
+	background-color: #eee;
+	border: 2px solid #aaa;
+	float:left;
+	margin: 3px;
+	border-radius: 5px;
+	padding: 5px;
+	text-align: center;
+	line-height: 150px;
+	font: bold 30px Arial;
+	color: #ccc;
+	/*чтобы не выделялся текст*/
+	-webkit-user-select: none;
+	/*чтобы курсор не менялся на вертикальную линию*/
+	cursor:default; 
+
+}
+
+/*описание этапов*/
+.description{
+	text-align: center;
+	line-height: 50px;
+	font: normal 20px Arial;
+	color: #ccc;
+	 -webkit-user-select: none;
+	 cursor:default;
+}
+/*правый столбец*/
+
+
+.cards{
+	left: 742px;
+	top: 20px;
+	position: absolute;
+	width: 225px;
+	height: 225px;
+	background-color: #fff;
+	border: 2px solid #6ccbe9;
+	
+	margin: 3px;
+	border-radius: 5px;
+	padding: 0;
+	text-align: center;
+	line-height: 150px;
+	font: bold 30px Arial;
+	color: #ccc;
+	/*transition: all 2s;*/
+	
+}
+
+.card-selected{
+	width: 225px;
+	height: 46px;
+	position:relative;
+}
+
+#card-1{
+	background-image: url(../images/book1.png)
+}
+
+
+.show-points{
+	position: relative;
+	width: 250px;
+	height: 35px;
+	background-color: yellow;
+	border: 2px solid #aaa;
+	margin: 3px;
+	border-radius: 5px;
+	padding: 5px;
+	text-align: center;
+	line-height: 150px;
+	font: bold 30px Arial;
+	color: green;
+	
+	transition: all 2s;
+}
+
+.coin{
+	position: absolute;
+	width: 40px;
+	height: 24px;
+	background-image: url(../images/coin.png);
+	bottom: 10px;
+	left: 10px;
+	z-index: 100;
+}
